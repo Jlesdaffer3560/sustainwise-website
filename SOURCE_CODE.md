@@ -1,16 +1,20 @@
+# SustainWise website — full source code
+
+Live at: https://sustainwiseapp.com
+Repo: https://github.com/Jlesdaffer3560/sustainwise-website
+
+---
+
+## index.html
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SustainWise — Fluent in ESG, 15 minutes a day</title>
-<meta name="description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk into short daily quizzes you'll actually remember. Free, on Android.">
-<link rel="canonical" href="https://sustainwiseapp.com/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://sustainwiseapp.com/">
-<meta property="og:title" content="SustainWise — Fluent in ESG, 15 minutes a day">
-<meta property="og:description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk into short daily quizzes you'll actually remember.">
-<meta name="twitter:card" content="summary">
+<meta name="description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced labour due diligence into short daily quizzes you'll actually remember. Free, on Android.">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
@@ -399,12 +403,12 @@
     <div class="hero-text">
       <span class="eyebrow">Free · Android · ESG learning</span>
       <h1>Fluent in ESG, <em>15 minutes</em> a day.</h1>
-      <p class="lede">SustainWise turns complex ESG rules, CSRD, SFDR, greenwashing claims, forced-labour supply-chain risk, into short daily quizzes you'll actually remember.</p>
+      <p class="lede">SustainWise turns the rules most people fake their way through, CSRD, SFDR, greenwashing claims, forced labour due diligence, into short daily quizzes you'll actually remember.</p>
       <div class="hero-ctas">
-        <a href="#team" class="btn btn-gold">Join the waitlist</a>
+        <a href="#get-app" class="btn btn-gold">Get it on Google Play</a>
         <a href="#pillars" class="btn btn-ghost">See what you'll learn</a>
       </div>
-      <p class="hero-proof">Written by Jordi Lesaffer, an ESG risk consultant.</p>
+      <p class="hero-proof">Written by Jordi Lesaffer, an ESG risk consultant, not a content farm.</p>
     </div>
 
     <div class="hero-demo">
@@ -428,7 +432,7 @@
   <div class="container loop-inner">
     <div>
       <span class="eyebrow">The loop</span>
-      <h2>One short session a day. That's the whole habit.</h2>
+      <h2>One question a day. That's the whole habit.</h2>
       <p class="loop-copy">Miss a day and the streak resets, same as any habit worth keeping. Right answers earn XP, XP unlocks levels, and levels unlock harder questions across environmental, social and governance topics.</p>
     </div>
     <div class="stat-row">
@@ -464,7 +468,7 @@
       <article class="pillar-card s">
         <span class="pillar-mark">S</span>
         <h3>Social</h3>
-        <p>Forced-labour supply-chain risk under the EU Forced Labour Regulation, human-rights due diligence, and what your CSRD report has to say about your own people.</p>
+        <p>Forced labour due diligence, supply chain human rights, and what your CSRD report has to say about your own people.</p>
       </article>
       <article class="pillar-card g">
         <span class="pillar-mark">G</span>
@@ -489,11 +493,11 @@
     <div class="team-inner">
       <span class="eyebrow">For organisations</span>
       <h2>Bringing this to your team?</h2>
-      <p>Interested in a SustainWise team pilot? Join the pilot list and help shape what a team version looks like.</p>
+      <p>If your compliance, marketing or sustainability team needs a shared baseline in ESG literacy, get in touch — we're exploring what a team version could look like.</p>
       <form class="team-form" id="waitlistForm" action="https://formspree.io/f/mzebpqrn" method="POST">
         <input type="email" name="email" placeholder="you@company.com" aria-label="Work email" required>
         <input type="hidden" name="_subject" value="New SustainWise waitlist signup">
-        <button type="submit" class="btn btn-gold">Request team access</button>
+        <button type="submit" class="btn btn-gold">Notify me</button>
       </form>
       <p class="form-note" id="waitlistStatus" role="status" aria-live="polite"></p>
     </div>
@@ -503,7 +507,7 @@
 <section class="final-cta reveal" id="get-app">
   <div class="container">
     <h2>15 minutes today. Fluent in weeks, not years.</h2>
-    <a href="#team" class="btn btn-gold btn-lg">Join the waitlist</a>
+    <a href="#" class="btn btn-gold btn-lg">Get it on Google Play</a>
     <p class="form-note" style="margin-top:16px;">Free. No account needed to start.</p>
   </div>
 </section>
@@ -523,19 +527,19 @@
     {
       tag: "Environmental · EmpCo",
       cat: "e",
-      question: "Which of these is a \u201Cgeneric environmental claim\u201D that EmpCo bans unless the trader can show recognised excellent environmental performance relevant to it?",
+      question: "Which of these claims is automatically banned under the EU's Empowering Consumers Directive (EmpCo), regardless of whether it's true?",
       options: [
         { text: "Made with 30% recycled plastic", correct: false },
         { text: "Climate neutral by 2050, verified annually", correct: false },
         { text: "Eco-friendly", correct: true },
         { text: "Carbon offset included, certificate attached", correct: false }
       ],
-      explanation: "Generic claims like \u201Ceco-friendly\u201D are banned under EmpCo unless the trader can demonstrate recognised excellent environmental performance relevant to the claim \u2014 it's a high substantiation bar, not an absolute ban regardless of truth."
+      explanation: "A bare claim like “eco-friendly” with no substantiation is banned outright under EmpCo's blacklist, regardless of whether it happens to be true."
     },
     {
       tag: "Governance · CSRD",
       cat: "g",
-      question: "What does \u201Cdouble materiality\u201D actually require a company to report?",
+      question: "What does “double materiality” actually require a company to report?",
       options: [
         { text: "Financial risk only", correct: false },
         { text: "How sustainability issues affect the company, and how the company affects people and the planet", correct: true },
@@ -547,14 +551,14 @@
     {
       tag: "Social · Forced Labour Regulation",
       cat: "s",
-      question: "A supply chain audit turns up credible indicators of forced labour. Under the EU Forced Labour Regulation, what has to happen before the product can be pulled from the EU market?",
+      question: "A supply chain audit turns up credible indicators of forced labour. Under the EU Forced Labour Regulation, what can happen to the product?",
       options: [
-        { text: "Nothing more, the audit finding is enough on its own", correct: false },
-        { text: "A competent authority must investigate and issue a final decision", correct: true },
+        { text: "Nothing, it's a labour law issue, not a trade one", correct: false },
+        { text: "It can be withdrawn from the EU market, seized at the border, or ordered destroyed", correct: true },
         { text: "Only a formal warning letter is sent", correct: false },
         { text: "It requires a UN Security Council resolution first", correct: false }
       ],
-      explanation: "An audit finding alone doesn't trigger removal. A competent authority has to investigate and reach a final decision — only then can the product be prohibited and withdrawn from the EU market, with disposal rules that prioritise recycling over destruction."
+      explanation: "Once a final decision is issued, products made with forced labour can be pulled from the EU market entirely, including seizure at the border."
     }
   ];
 
@@ -660,3 +664,129 @@
 
 </body>
 </html>
+```
+
+---
+
+## privacy-policy.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — SustainWise</title>
+<meta name="description" content="Privacy policy for SustainWise, the ESG learning app by NOVARISQ Consulting.">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+  :root{
+    --ink:#12261f;
+    --ink-2:#1e4e41;
+    --paper:#fafaf7;
+    --paper-dim:#bfc4c0;
+    --gold:#b96a2e;
+    --gold-soft:#d98f52;
+    --line:rgba(250,250,247,0.14);
+    --line-strong:rgba(250,250,247,0.24);
+  }
+
+  *{box-sizing:border-box;}
+
+  body{
+    margin:0;
+    background:var(--ink);
+    color:var(--paper);
+    font-family:'Work Sans', -apple-system, sans-serif;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--gold-soft);}
+  a:hover{color:var(--gold);}
+
+  .container{
+    max-width:760px;
+    margin:0 auto;
+    padding:0 28px;
+  }
+
+  header.site-nav{
+    padding:16px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .logo{
+    display:flex; align-items:center; gap:9px;
+    font-family:'Fraunces', serif; font-weight:600; font-size:1.15rem;
+    text-decoration:none; color:var(--paper);
+  }
+  .logo-mark{width:22px; height:22px; flex:none;}
+
+  main{padding:56px 0 72px;}
+
+  h1,h2{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+  }
+  h1{font-size:clamp(1.8rem,3.4vw,2.4rem); margin:0 0 6px;}
+  .updated{
+    font-family:'Space Mono', monospace;
+    font-size:0.75rem; letter-spacing:0.08em; text-transform:uppercase;
+    color:var(--gold); margin:0 0 40px; display:block;
+  }
+  h2{font-size:1.2rem; margin:36px 0 12px;}
+  p, li{color:var(--paper-dim); font-size:0.98rem;}
+  ul{padding-left:20px;}
+
+  footer{
+    padding:24px 0 40px;
+    border-top:1px solid var(--line);
+    font-size:0.85rem; color:var(--paper-dim);
+  }
+</style>
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 24 24" fill="none">
+        <circle cx="12" cy="12" r="10.5" stroke="#b96a2e" stroke-width="1.6"/>
+        <path d="M7.5 12.3l3 3 6-6.4" stroke="#d98f52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      SustainWise
+    </a>
+  </div>
+</header>
+
+<main class="container">
+  <h1>Privacy Policy</h1>
+  <span class="updated">Last updated: 27 August 2026</span>
+
+  <p>SustainWise is developed by NOVARISQ Consulting, based in Brussels, Belgium. This page explains what happens to your data when you visit this website.</p>
+
+  <h2>What this site collects</h2>
+  <p>This is a static marketing page for the SustainWise app. It does not use cookies, analytics, or tracking scripts.</p>
+  <p>The only data you can submit is your email address, through the "Notify me" waitlist form. If and when that form is connected to a mailing list, submitted addresses are used solely to notify you about the SustainWise launch and, if relevant, the team version. We do not sell or share your email address with third parties.</p>
+
+  <h2>Third-party services</h2>
+  <p>This site loads web fonts from Google Fonts (fonts.googleapis.com and fonts.gstatic.com). Loading a font causes your browser to make a request to Google's servers, which may log your IP address. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google's privacy policy</a> for details.</p>
+
+  <h2>Your rights</h2>
+  <p>Under the EU General Data Protection Regulation (GDPR), you can ask to access, correct, or delete any personal data we hold about you (such as a waitlist email address). To do so, contact us at <a href="mailto:jordi.lesaffer@novarisq.com">jordi.lesaffer@novarisq.com</a>.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the app and website evolve. Check back here for the latest version.</p>
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 SustainWise — by <a href="https://www.novarisq.com" target="_blank" rel="noopener noreferrer">NOVARISQ Consulting</a>
+  </div>
+</footer>
+
+</body>
+</html>
+```
