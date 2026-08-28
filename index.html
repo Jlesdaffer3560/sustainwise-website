@@ -398,27 +398,6 @@
     border-bottom:1px solid var(--border);
   }
   .team-inner{max-width:56ch; margin:0 auto; text-align:center;}
-  .team-outputs{
-    font-family:'Space Mono', monospace; font-size:0.8rem;
-    color:var(--teal-deep); font-weight:700;
-    margin-top:-4px;
-  }
-  .team-form{
-    display:flex; gap:10px; margin:26px 0 12px;
-    justify-content:center; flex-wrap:wrap;
-  }
-  .team-form input{
-    flex:1; min-width:220px; max-width:320px;
-    padding:14px 18px;
-    border-radius:999px;
-    border:1px solid var(--border);
-    background:var(--surface);
-    color:var(--ink);
-    font-family:'Work Sans', sans-serif;
-    font-size:0.95rem;
-  }
-  .team-form input::placeholder{color:var(--ink-soft);}
-  .form-note{font-size:0.82rem; color:var(--ink-soft);}
 
   /* ---------- final cta ---------- */
   .final-cta{
@@ -619,15 +598,9 @@
   <div class="container">
     <div class="team-inner">
       <span class="eyebrow">For organisations</span>
-      <h2>Bringing this to your team?</h2>
-      <p>Pilot SustainWise with your sustainability, legal, compliance, communications or finance team.</p>
-      <p class="team-outputs">Custom quiz sets · Team progress insights · Practical ESG knowledge checks</p>
-      <form class="team-form" id="waitlistForm" action="https://formspree.io/f/mzebpqrn" method="POST">
-        <input type="email" name="email" placeholder="you@company.com" aria-label="Work email" required>
-        <input type="hidden" name="_subject" value="New SustainWise waitlist signup">
-        <button type="submit" class="btn btn-gold">Request team access</button>
-      </form>
-      <p class="form-note" id="waitlistStatus" role="status" aria-live="polite"></p>
+      <h2>Want more detailed training for your team?</h2>
+      <p>Get in touch to discuss tailored ESG training for your organisation, built on the same CSRD, SFDR and forced-labour content covered in the app.</p>
+      <a href="mailto:jordi.lesaffer@novarisq.com?subject=SustainWise%20training%20for%20my%20team" class="btn btn-gold">Contact me</a>
     </div>
   </div>
 </section>
@@ -740,35 +713,6 @@
   });
 
   renderQuestion();
-
-  // waitlist form (Formspree)
-  const waitlistForm = document.getElementById('waitlistForm');
-  const waitlistStatus = document.getElementById('waitlistStatus');
-  if (waitlistForm) {
-    waitlistForm.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const submitBtn = waitlistForm.querySelector('button[type="submit"]');
-      submitBtn.disabled = true;
-      waitlistStatus.textContent = 'Sending…';
-      try {
-        const response = await fetch(waitlistForm.action, {
-          method: 'POST',
-          body: new FormData(waitlistForm),
-          headers: { 'Accept': 'application/json' }
-        });
-        if (response.ok) {
-          waitlistForm.reset();
-          waitlistStatus.textContent = "Thanks — we'll be in touch.";
-        } else {
-          waitlistStatus.textContent = 'Something went wrong. Please try again.';
-          submitBtn.disabled = false;
-        }
-      } catch (err) {
-        waitlistStatus.textContent = 'Something went wrong. Please try again.';
-        submitBtn.disabled = false;
-      }
-    });
-  }
 
   // scroll reveal
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
