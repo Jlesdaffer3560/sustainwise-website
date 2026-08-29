@@ -319,22 +319,39 @@
   .pillars .section-head{max-width:60ch; margin-bottom:44px;}
   .unit-list{
     list-style:none; margin:0; padding:0;
-    display:grid; grid-template-columns:repeat(2,1fr); gap:18px;
+    display:grid; grid-template-columns:repeat(2,1fr); gap:16px;
   }
   .unit-list li{
     display:flex; gap:16px; align-items:flex-start;
     background:var(--surface);
     border:1px solid var(--border);
     border-radius:16px;
-    padding:22px 22px;
+    padding:20px 20px;
   }
   .unit-index{
-    font-family:'Space Mono', monospace; font-weight:700; font-size:1.4rem;
-    color:var(--teal-deep); flex:none; width:34px; line-height:1;
+    font-family:'Space Mono', monospace; font-weight:700; font-size:0.95rem;
+    flex:none; width:38px; height:38px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:var(--accent-soft); color:var(--teal-deep);
   }
-  .unit-list li:nth-child(even) .unit-index{color:var(--amber-deep);}
-  .unit-list h3{font-size:1.08rem; margin-bottom:6px;}
-  .unit-list p{color:var(--ink-soft); font-size:0.9rem; margin:0;}
+  /* unit accents, ported 1:1 from the app's own unitAccents palette */
+  .unit-list li:nth-child(1) .unit-index{background:#AEEAC4; color:#007029;}
+  .unit-list li:nth-child(2) .unit-index{background:#AED7EA; color:#004D70;}
+  .unit-list li:nth-child(3) .unit-index{background:#EAD3AE; color:#704600;}
+  .unit-list li:nth-child(4) .unit-index{background:#EAAEAE; color:#700000;}
+  .unit-list li:nth-child(5) .unit-index{background:#AEEAE3; color:#007064;}
+  .unit-list li:nth-child(6) .unit-index{background:#EAAECC; color:#700038;}
+  .unit-list li:nth-child(7) .unit-index{background:#D2EAAE; color:#447000;}
+  .unit-list li:nth-child(8) .unit-index{background:#C0AEEA; color:#220070;}
+  .unit-list h3{font-size:1.05rem; margin-bottom:5px;}
+  .unit-list p{color:var(--ink-soft); font-size:0.88rem; margin:0; line-height:1.45;}
+  .unit-capstone{
+    grid-column:1 / -1;
+    background:var(--amber-soft) !important;
+    border-color:var(--amber-deep) !important;
+  }
+  .unit-capstone .unit-index{background:var(--amber-deep); color:#fff; font-size:1.1rem;}
+  .unit-capstone h3{color:var(--amber-deep);}
 
   /* ---------- why different ---------- */
   .why-different{padding:80px 0; background:var(--accent-soft); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
@@ -477,7 +494,7 @@
     <div>
       <span class="eyebrow">The loop</span>
       <h2>One short session a day. That's the whole habit.</h2>
-      <p class="loop-copy">Miss a day and the streak resets, same as any habit worth keeping. Right answers earn XP, XP unlocks levels, and levels unlock harder questions as you move through the six units.</p>
+      <p class="loop-copy">Miss a day and the streak resets, same as any habit worth keeping. Right answers earn XP, XP unlocks levels, and levels unlock harder questions as you move through the eight units.</p>
     </div>
     <div class="stat-row">
       <div class="stat-card">
@@ -501,49 +518,70 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">What you'll actually learn</span>
-      <h2>Six units, one learning path</h2>
+      <h2>Eight units, one learning path</h2>
     </div>
     <ol class="unit-list">
       <li>
         <span class="unit-index">01</span>
         <div>
-          <h3>ESG Fundamentals</h3>
-          <p>The core vocabulary and structure behind ESG regulation, so every later unit actually makes sense.</p>
+          <h3>ESG &amp; CSR Basics</h3>
+          <p>The core vocabulary every ESG conversation starts with — stakeholders, materiality, CSR, shared value, and what the three letters actually mean.</p>
         </div>
       </li>
       <li>
         <span class="unit-index">02</span>
         <div>
-          <h3>CSR &amp; Ethics</h3>
-          <p>Corporate responsibility, business ethics, and how stakeholder impact gets assessed.</p>
+          <h3>Climate &amp; Environment</h3>
+          <p>Scope 1/2/3, net zero, and the environmental footprint every company now has to count and report.</p>
         </div>
       </li>
       <li>
         <span class="unit-index">03</span>
         <div>
-          <h3>CSRD &amp; ESRS</h3>
-          <p>Sustainability reporting, double materiality, ESRS 1, and IRO identification.</p>
+          <h3>Human Rights &amp; Supply Chains</h3>
+          <p>Value chains, forced labour, and the human side of every supply chain — plus CSDDD, the law that turns human-rights due diligence into a legal obligation.</p>
         </div>
       </li>
       <li>
         <span class="unit-index">04</span>
         <div>
-          <h3>CSDDD</h3>
-          <p>Human-rights and environmental due diligence obligations across the value chain.</p>
+          <h3>Governance &amp; Anti-Corruption</h3>
+          <p>Corruption, whistleblowing, and how a board is supposed to keep a company honest.</p>
         </div>
       </li>
       <li>
         <span class="unit-index">05</span>
         <div>
-          <h3>SFDR</h3>
-          <p>Sustainable finance disclosure rules and how funds classify their own sustainability claims.</p>
+          <h3>Reporting Standards</h3>
+          <p>CSRD, ESRS, GRI, and the alphabet soup behind every sustainability report you will ever read.</p>
         </div>
       </li>
       <li>
         <span class="unit-index">06</span>
         <div>
-          <h3>EU Taxonomy</h3>
-          <p>Which economic activities count as environmentally sustainable — and how to check.</p>
+          <h3>Sustainable Finance</h3>
+          <p>SFDR, the EU Taxonomy, and how money gets labelled "sustainable" — or doesn't.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">07</span>
+        <div>
+          <h3>Claims &amp; Greenwashing</h3>
+          <p>What a company is legally allowed to say about its own sustainability credentials — and what crosses the line.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">08</span>
+        <div>
+          <h3>Context &amp; History</h3>
+          <p>The institutions, milestones, and history behind everything above.</p>
+        </div>
+      </li>
+      <li class="unit-capstone">
+        <span class="unit-index">★</span>
+        <div>
+          <h3>Expert Challenge</h3>
+          <p>30 very hard questions across every unit — thresholds, edge cases, the fine print. Unlocks once all eight units are done.</p>
         </div>
       </li>
     </ol>
