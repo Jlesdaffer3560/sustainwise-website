@@ -11,6 +11,7 @@
 <meta property="og:title" content="SustainWise — Fluent in ESG, 15 minutes a day">
 <meta property="og:description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk into short daily quizzes you'll actually remember.">
 <meta name="twitter:card" content="summary">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Crect%20width='40'%20height='40'%20rx='10'%20fill='%231e4e41'/%3E%3Cpath%20d='M20%207C29%2011%2029%2027%2020%2033C11%2027%2011%2011%2020%207Z'%20fill='%23fafaf7'/%3E%3Cpath%20d='M20%209L20%2031'%20stroke='%231e4e41'%20stroke-width='1.4'%20stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
 
@@ -313,74 +314,47 @@
   }
   .xp-fill{height:100%; width:62%; background:#2e7d46;}
 
-  /* ---------- pillars ---------- */
+  /* ---------- pillars / units ---------- */
   .pillars{padding:88px 0;}
   .pillars .section-head{max-width:60ch; margin-bottom:44px;}
-  .pillar-grid{
-    display:grid; grid-template-columns:repeat(3,1fr); gap:22px;
+  .unit-list{
+    list-style:none; margin:0; padding:0;
+    display:grid; grid-template-columns:repeat(2,1fr); gap:18px;
   }
-  .pillar-card{
+  .unit-list li{
+    display:flex; gap:16px; align-items:flex-start;
     background:var(--surface);
     border:1px solid var(--border);
-    border-top:4px solid var(--border);
-    border-radius:18px;
-    padding:28px 24px;
+    border-radius:16px;
+    padding:22px 22px;
   }
-  .pillar-card.e{border-top-color:var(--teal);}
-  .pillar-card.s{border-top-color:var(--danger);}
-  .pillar-card.g{border-top-color:var(--amber);}
-  .pillar-mark{
-    font-family:'Fraunces', serif; font-weight:700; font-size:1.9rem;
-    display:inline-flex; align-items:center; justify-content:center;
-    width:48px; height:48px; border-radius:12px;
-    margin-bottom:18px;
+  .unit-index{
+    font-family:'Space Mono', monospace; font-weight:700; font-size:1.4rem;
+    color:var(--teal-deep); flex:none; width:34px; line-height:1;
   }
-  .pillar-card.e .pillar-mark{background:var(--accent-soft); color:var(--teal-deep);}
-  .pillar-card.s .pillar-mark{background:var(--danger-soft); color:var(--danger);}
-  .pillar-card.g .pillar-mark{background:var(--amber-soft); color:var(--amber-deep);}
-  .pillar-card h3{font-size:1.2rem; margin-bottom:10px;}
-  .pillar-card p{color:var(--ink-soft); font-size:0.95rem; margin:0;}
+  .unit-list li:nth-child(even) .unit-index{color:var(--amber-deep);}
+  .unit-list h3{font-size:1.08rem; margin-bottom:6px;}
+  .unit-list p{color:var(--ink-soft); font-size:0.9rem; margin:0;}
 
   /* ---------- why different ---------- */
-  .why-different{padding:64px 0; background:var(--accent-soft); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
-  .why-different .section-head{text-align:center; margin-bottom:32px;}
+  .why-different{padding:80px 0; background:var(--accent-soft); border-top:1px solid var(--border); border-bottom:1px solid var(--border);}
+  .why-different .section-head{text-align:center; margin-bottom:40px;}
   .why-different .eyebrow{text-align:center;}
   .why-list{
-    list-style:none; margin:0 auto; padding:0;
-    max-width:680px;
+    list-style:none; margin:0; padding:0;
+    display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
   }
   .why-list li{
-    font-size:1rem; color:var(--ink-soft);
-    padding:14px 0; border-bottom:1px solid var(--border);
-  }
-  .why-list li:last-child{border-bottom:none;}
-  .why-list strong{color:var(--teal-deep); font-family:'Fraunces', serif;}
-
-  /* ---------- sample questions ---------- */
-  .sample-questions{padding:80px 0;}
-  .sample-questions .section-head{max-width:60ch; margin:0 auto 40px; text-align:center;}
-  .sample-questions .eyebrow{text-align:center;}
-  .sample-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
-  .sample-card{
     background:var(--surface);
     border:1px solid var(--border);
-    border-radius:18px;
-    padding:26px 24px;
+    border-radius:16px;
+    padding:24px 22px;
+    font-size:0.95rem; color:var(--ink-soft); line-height:1.5;
   }
-  .sample-tag{
-    display:inline-block;
-    font-family:'Space Mono', monospace; font-size:0.68rem;
-    letter-spacing:0.08em; text-transform:uppercase;
-    padding:5px 12px; border-radius:999px; margin-bottom:16px;
-    background:var(--accent-soft); color:var(--teal-deep);
+  .why-list strong{
+    display:block; color:var(--teal-deep); font-family:'Fraunces', serif;
+    font-size:1.08rem; margin-bottom:8px;
   }
-  .sample-tag.cat-s{background:var(--danger-soft); color:var(--danger);}
-  .sample-tag.cat-g{background:var(--amber-soft); color:var(--amber-deep);}
-  .sample-card h3{
-    font-family:'Fraunces', serif; font-weight:500;
-    font-size:1.02rem; line-height:1.4; margin-bottom:14px;
-  }
-  .sample-card p{font-size:0.88rem; color:var(--ink-soft); margin:0;}
 
   /* ---------- credibility ---------- */
   .credibility{
@@ -426,8 +400,8 @@
     .hero-grid{grid-template-columns:1fr; gap:48px;}
     .use-case-grid{grid-template-columns:1fr; gap:28px;}
     .loop-inner{grid-template-columns:1fr;}
-    .pillar-grid{grid-template-columns:1fr;}
-    .sample-grid{grid-template-columns:1fr;}
+    .unit-list{grid-template-columns:1fr;}
+    .why-list{grid-template-columns:1fr;}
     .hero{padding:52px 0 64px;}
   }
 </style>
@@ -437,9 +411,10 @@
 <header class="site-nav">
   <div class="nav-row">
     <a href="#" class="logo">
-      <svg class="logo-mark" viewBox="0 0 24 24" fill="none">
-        <circle cx="12" cy="12" r="10.5" stroke="#b96a2e" stroke-width="1.6"/>
-        <path d="M7.5 12.3l3 3 6-6.4" stroke="#d98f52" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+        <rect width="40" height="40" rx="10" fill="#1e4e41"/>
+        <path d="M20 7C29 11 29 27 20 33C11 27 11 11 20 7Z" fill="#fafaf7"/>
+        <path d="M20 9L20 31" stroke="#1e4e41" stroke-width="1.4" stroke-linecap="round"/>
       </svg>
       SustainWise
     </a>
@@ -460,7 +435,7 @@
     </div>
 
     <div class="hero-demo">
-      <p class="demo-label">Live demo — this is the app</p>
+      <p class="demo-label">Live demo</p>
       <div class="phone-frame">
         <div class="phone-notch"></div>
         <span class="quiz-tag" id="cardTag">Environmental · EmpCo</span>
@@ -498,7 +473,7 @@
     <div>
       <span class="eyebrow">The loop</span>
       <h2>One short session a day. That's the whole habit.</h2>
-      <p class="loop-copy">Miss a day and the streak resets, same as any habit worth keeping. Right answers earn XP, XP unlocks levels, and levels unlock harder questions across environmental, social and governance topics.</p>
+      <p class="loop-copy">Miss a day and the streak resets, same as any habit worth keeping. Right answers earn XP, XP unlocks levels, and levels unlock harder questions as you move through the six units.</p>
     </div>
     <div class="stat-row">
       <div class="stat-card">
@@ -522,25 +497,52 @@
   <div class="container">
     <div class="section-head">
       <span class="eyebrow">What you'll actually learn</span>
-      <h2>Three pillars. Every acronym lives inside one of them.</h2>
+      <h2>Six units, one learning path</h2>
     </div>
-    <div class="pillar-grid">
-      <article class="pillar-card e">
-        <span class="pillar-mark">E</span>
-        <h3>Environmental</h3>
-        <p>Climate transition plans, the EU Taxonomy, and which sustainability claims are actually allowed under EmpCo.</p>
-      </article>
-      <article class="pillar-card s">
-        <span class="pillar-mark">S</span>
-        <h3>Social</h3>
-        <p>Forced-labour supply-chain risk under the EU Forced Labour Regulation, human-rights due diligence, and what your CSRD report has to say about your own people.</p>
-      </article>
-      <article class="pillar-card g">
-        <span class="pillar-mark">G</span>
-        <h3>Governance</h3>
-        <p>Double materiality, board oversight, and how ESG data actually holds up once someone checks it.</p>
-      </article>
-    </div>
+    <ol class="unit-list">
+      <li>
+        <span class="unit-index">01</span>
+        <div>
+          <h3>ESG Fundamentals</h3>
+          <p>The core vocabulary and structure behind ESG regulation, so every later unit actually makes sense.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">02</span>
+        <div>
+          <h3>CSR &amp; Ethics</h3>
+          <p>Corporate responsibility, business ethics, and how stakeholder impact gets assessed.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">03</span>
+        <div>
+          <h3>CSRD &amp; ESRS</h3>
+          <p>Sustainability reporting, double materiality, ESRS 1, and IRO identification.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">04</span>
+        <div>
+          <h3>CSDDD</h3>
+          <p>Human-rights and environmental due diligence obligations across the value chain.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">05</span>
+        <div>
+          <h3>SFDR</h3>
+          <p>Sustainable finance disclosure rules and how funds classify their own sustainability claims.</p>
+        </div>
+      </li>
+      <li>
+        <span class="unit-index">06</span>
+        <div>
+          <h3>EU Taxonomy</h3>
+          <p>Which economic activities count as environmentally sustainable — and how to check.</p>
+        </div>
+      </li>
+    </ol>
   </div>
 </section>
 
@@ -559,32 +561,6 @@
   </div>
 </section>
 
-<section class="sample-questions reveal" id="sample-questions">
-  <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Sample questions</span>
-      <h2>Three real questions from the app</h2>
-    </div>
-    <div class="sample-grid">
-      <article class="sample-card">
-        <span class="sample-tag">Environmental · EmpCo</span>
-        <h3>Which of these is a "generic environmental claim" that EmpCo bans unless the trader can show recognised excellent environmental performance relevant to it?</h3>
-        <p><strong>Answer:</strong> "Eco-friendly" — generic claims like this are banned under EmpCo unless the trader can demonstrate recognised excellent environmental performance relevant to the claim.</p>
-      </article>
-      <article class="sample-card">
-        <span class="sample-tag cat-g">Governance · CSRD</span>
-        <h3>What does "double materiality" actually require a company to report?</h3>
-        <p><strong>Answer:</strong> How sustainability issues affect the company, and how the company affects people and the planet — double materiality runs both directions.</p>
-      </article>
-      <article class="sample-card">
-        <span class="sample-tag cat-s">Social · Forced Labour Regulation</span>
-        <h3>A supply chain audit turns up credible indicators of forced labour. What has to happen before the product can be pulled from the EU market?</h3>
-        <p><strong>Answer:</strong> A competent authority must investigate and issue a final decision — an audit finding alone isn't enough.</p>
-      </article>
-    </div>
-  </div>
-</section>
-
 <section class="credibility reveal">
   <div class="container">
     <div class="credibility-inner">
@@ -599,7 +575,7 @@
     <div class="team-inner">
       <span class="eyebrow">For organisations</span>
       <h2>Want more detailed training for your team?</h2>
-      <p>Get in touch to discuss tailored ESG training for your organisation, built on the same CSRD, SFDR and forced-labour content covered in the app.</p>
+      <p>Get in touch to discuss tailored ESG training for your organisation, built on the same content covered in the app.</p>
       <a href="mailto:jordi.lesaffer@novarisq.com?subject=SustainWise%20training%20for%20my%20team" class="btn btn-gold">Contact me</a>
     </div>
   </div>
