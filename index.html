@@ -103,6 +103,11 @@
   .btn-ghost{background:transparent; border-color:var(--border); color:var(--ink);}
   .btn-ghost:hover{border-color:var(--teal); color:var(--teal-deep);}
   .btn-lg{padding:17px 38px; font-size:1.05rem;}
+  .btn[disabled]{
+    background:var(--border); color:var(--ink-soft);
+    cursor:not-allowed; opacity:0.75;
+  }
+  .btn[disabled]:hover{transform:none; box-shadow:none;}
 
   /* ---------- reveal on scroll ---------- */
   .reveal{opacity:0; transform:translateY(18px); transition:opacity .6s ease, transform .6s ease;}
@@ -368,7 +373,7 @@
       </svg>
       SustainWise
     </a>
-    <a href="https://app.sustainwiseapp.com" class="btn btn-gold nav-cta">Start the quiz online</a>
+    <button type="button" class="btn btn-gold nav-cta" disabled title="Coming soon">Download App in Google Play</button>
   </div>
 </header>
 
