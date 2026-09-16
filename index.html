@@ -4,13 +4,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SustainWise — Fluent in ESG, 15 minutes a day</title>
-<meta name="description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk into short daily quizzes you'll actually remember. Free, on Android.">
+<meta name="description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk into short daily quizzes you'll actually remember. Free — try it online now.">
 <link rel="canonical" href="https://sustainwiseapp.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sustainwiseapp.com/">
 <meta property="og:title" content="SustainWise — Fluent in ESG, 15 minutes a day">
 <meta property="og:description" content="SustainWise turns CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk into short daily quizzes you'll actually remember.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://sustainwiseapp.com/assets/sustainwise-social-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://sustainwiseapp.com/assets/sustainwise-social-preview.png">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Crect%20width='40'%20height='40'%20rx='10'%20fill='%231e4e41'/%3E%3Cpath%20d='M20%207C29%2011%2029%2027%2020%2033C11%2027%2011%2011%2020%207Z'%20fill='%23fafaf7'/%3E%3Cpath%20d='M20%209L20%2031'%20stroke='%231e4e41'%20stroke-width='1.4'%20stroke-linecap='round'/%3E%3C/svg%3E">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
@@ -133,6 +137,13 @@
   .logo-mark{width:22px; height:22px; flex:none;}
   .nav-cta{
     padding:9px 20px; font-size:0.85rem;
+    white-space:nowrap;
+  }
+  .nav-cta .short{display:none;}
+  @media (max-width:480px){
+    .nav-cta{padding:8px 14px; font-size:0.72rem;}
+    .nav-cta .full{display:none;}
+    .nav-cta .short{display:inline;}
   }
 
   /* ---------- hero ---------- */
@@ -373,14 +384,14 @@
       </svg>
       SustainWise
     </a>
-    <button type="button" class="btn btn-gold nav-cta" disabled title="Coming soon">Download App in Google Play</button>
+    <button type="button" class="btn btn-gold nav-cta" disabled title="Coming soon"><span class="full">Download App in Google Play</span><span class="short">Coming to Google Play</span></button>
   </div>
 </header>
 
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-text">
-      <span class="eyebrow">Free · Android · ESG learning</span>
+      <span class="eyebrow">Free · Web app · ESG learning</span>
       <h1>Fluent in ESG, <em>15 minutes</em> a day.</h1>
       <p class="lede">ESG microlearning for professionals who need to understand CSRD, SFDR, greenwashing, forced labour and sustainability risk — without taking a full course.</p>
       <div class="hero-ctas">
