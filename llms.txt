@@ -1,0 +1,37 @@
+# SustainWise
+
+> SustainWise is a free ESG-learning app with short daily lessons and quizzes on CSRD, SFDR, greenwashing rules and forced-labour supply-chain risk. It is built by NOVARISQ Consulting in Brussels and written by Jordi Lesaffer, an ESG risk consultant.
+
+Key facts:
+- Free. Available on Android (Google Play) and as a web app in the browser.
+- One learning path of eight units plus an Expert Challenge of 30 very hard questions; built around one short session (about 15 minutes) a day.
+- EU-focused: CSRD, CSDDD, SFDR, EmpCo and the EU Forced Labour Regulation.
+- Contact (also for team training): jordi.lesaffer@novarisq.com
+
+## Get the app
+- [SustainWise on Google Play](https://play.google.com/store/apps/details?id=com.regulingo.app): the Android app.
+- [SustainWise web app](https://app.sustainwiseapp.com): the same lessons in the browser.
+
+## Learning path
+- [ESG & CSR Basics](https://sustainwiseapp.com/#pillars): The core vocabulary every ESG conversation starts with — stakeholders, materiality, CSR, shared value, and what the three letters actually mean.
+- [Climate & Environment](https://sustainwiseapp.com/#pillars): Scope 1/2/3, net zero, and the environmental footprint every company now has to count and report.
+- [Human Rights & Supply Chains](https://sustainwiseapp.com/#pillars): Value chains, forced labour, and the human side of every supply chain — plus CSDDD, the law that turns human-rights due diligence into a legal obligation.
+- [Governance & Anti-Corruption](https://sustainwiseapp.com/#pillars): Corruption, whistleblowing, and how a board is supposed to keep a company honest.
+- [Reporting Standards](https://sustainwiseapp.com/#pillars): CSRD, ESRS, GRI, and the alphabet soup behind every sustainability report you will ever read.
+- [Sustainable Finance](https://sustainwiseapp.com/#pillars): SFDR, the EU Taxonomy, and how money gets labelled "sustainable" — or doesn't.
+- [Claims & Greenwashing](https://sustainwiseapp.com/#pillars): What a company is legally allowed to say about its own sustainability credentials — and what crosses the line.
+- [Context & History](https://sustainwiseapp.com/#pillars): The institutions, milestones, and history behind everything above.
+- [Expert Challenge](https://sustainwiseapp.com/#pillars): 30 very hard questions across every unit — thresholds, edge cases, the fine print. Unlocks once all eight units are done.
+
+## About the app
+- [What you'll learn](https://sustainwiseapp.com/#pillars): the eight units and the Expert Challenge.
+- [FAQ](https://sustainwiseapp.com/#faq): answers about content, format, price and training for teams.
+- [App facts](https://sustainwiseapp.com/app-facts.html): single reference page with the key facts.
+
+## Who built it
+- [NOVARISQ Consulting](https://novarisq.com/): independent ESG, sustainability and reputational risk consultancy in Brussels.
+- [Jordi Lesaffer](https://novarisq.com/#about): author of the content.
+
+## Optional
+- [Privacy policy](https://sustainwiseapp.com/privacy-policy.html)
+- [Sitemap](https://sustainwiseapp.com/sitemap.xml)
